@@ -1,39 +1,11 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
+import CustomLabel from './src/Components/CustomLabel';
 
 function App(): React.JSX.Element {
   return (
-    /*text is used for adding text/words
-    every component has properties called as props
-    ex:-> style properties
-    Text is a UI base component
-    */
-    <View
-      style={{
-        alignItems: 'center',
-      }}>
-      <Text
-        style={{
-          fontSize: 40,
-          fontWeight: 'bold',
-          color: 'red',
-          marginLeft: 10,
-          marginTop: 10,
-        }}>
-        i'm Parent Component
-      </Text>
-      <Text
-        style={{
-          fontSize: 30,
-          fontWeight: 'bold',
-          color: '#03fcd3',
-          marginLeft: 10,
-          marginTop: 10,
-          marginBottom: 100,
-        }}>
-        Im child comonent
-      </Text>
-      <Button title="Click Me Bn" />
+    <View>
+      <CustomLabel />
     </View>
   );
 }

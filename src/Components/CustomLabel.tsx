@@ -1,7 +1,7 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-const CustomLabel = () => {
+const CustomLabel = (props: any) => {
   return (
     <View>
       <Text
@@ -12,7 +12,7 @@ const CustomLabel = () => {
           marginLeft: 50,
           marginTop: 200,
         }}>
-        Create Custom Component
+        {props.children}
       </Text>
     </View>
   );

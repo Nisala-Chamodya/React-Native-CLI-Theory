@@ -1,0 +1,39 @@
+import {View, Text} from 'react-native';
+import React from 'react';
+
+const CustomLabel = (props: any) => {
+  return (
+    <View>
+      <Text
+        style={{
+          fontSize: 20,
+          color: 'pink',
+          fontWeight: '700',
+          marginLeft: 50,
+          marginTop: 200,
+        }}>
+        {props.children}
+      </Text>
+    </View>
+  );
+};
+
+export default CustomLabel;
+
+
+//app.tsx --> create component use Like
+import React from 'react';
+import {Button, Text, View} from 'react-native';
+import CustomLabel from './src/Components/CustomLabel';
+
+function App(): React.JSX.Element {
+  //why we are use props/properties --> we can import valuses from other side using this props
+  //How to inject outside values from the component
+  return (
+    <View>
+      <CustomLabel>Define a Props</CustomLabel>
+    </View>
+  );
+}
+
+export default App;

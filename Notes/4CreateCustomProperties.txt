@@ -1,3 +1,19 @@
+import {View, Text} from 'react-native';
+import React from 'react';
+
+const UsingProps = (props: any) => {
+  return (
+    <View>
+      <Text style={{fontSize: props.fSize}}>{props.test}</Text>
+    </View>
+  );
+};
+
+export default UsingProps;
+
+
+//app.tst like this pass values here
+
 import React from 'react';
 import {Button, Text, View} from 'react-native';
 import CustomLabel from './src/Components/CustomLabel';
